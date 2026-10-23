@@ -13,12 +13,15 @@ export const CONTACT = {
   facebook: "https://www.facebook.com/share/1EQkhJMWvH",
 };
 
+// Set for static exports served from a subpath (see next.config.ts). next/image doesn't add it to string srcs.
+export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export const PHOTOS = {
-  heroHome: "/images/hero-home.jpg",
-  crew: "/images/crew.jpg",
-  stuccoDrive: "/images/stucco-drive.jpg",
-  poolPalm: "/images/pool-palm.jpg",
-  coastal: "/images/coastal.jpg",
+  heroHome: `${BASE_PATH}/images/hero-home.jpg`,
+  crew: `${BASE_PATH}/images/crew.jpg`,
+  stuccoDrive: `${BASE_PATH}/images/stucco-drive.jpg`,
+  poolPalm: `${BASE_PATH}/images/pool-palm.jpg`,
+  coastal: `${BASE_PATH}/images/coastal.jpg`,
 };
 
 export const NAV_LINKS = ["services", "why", "work", "process", "areas", "contact"] as const;

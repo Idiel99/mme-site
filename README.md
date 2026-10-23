@@ -30,6 +30,22 @@ npm run dev        # http://localhost:3000 → redirects to /en
 
 Set `NEXT_PUBLIC_SITE_URL` (e.g. `https://example.com`) in production so canonical URLs, Open Graph, and JSON-LD use the real domain.
 
+## Deployment
+
+**GitHub Pages (preview link):** every push to `main` runs `.github/workflows/pages.yml`, which tests the app, builds a static export, and publishes it to **https://idiel99.github.io/mme-site/**.
+
+The static export is a second build mode, switched on by environment variables:
+
+| Variable               | Purpose                                                   |
+| ---------------------- | --------------------------------------------------------- |
+| `STATIC_EXPORT=true`   | `output: "export"` into `out/`, unoptimized images         |
+| `BASE_PATH`            | Subpath the site is served from (e.g. `/mme-site`)         |
+| `NEXT_PUBLIC_SITE_URL` | Full public URL, used for canonical / Open Graph / JSON-LD |
+
+The workflow sets all three from the Pages settings. In this mode `proxy.ts` doesn't run (static hosts have no server), so `app/page.tsx` redirects `/` with a meta refresh and the host's `404.html` handles unknown paths.
+
+**Own server:** `npm run build && npm start` uses `output: "standalone"` with the locale proxy and image optimization.
+
 ## Structure
 
 ```

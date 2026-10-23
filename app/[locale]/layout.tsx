@@ -14,6 +14,8 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata" });
+  // Absolute URL: Next joins metadataBase + path by concatenation, which doubles a basePath.
+  const ogImage = new URL(PHOTOS.heroHome, SITE_URL).href;
 
   return {
     title: t("title"),
@@ -35,13 +37,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale: locale === "es" ? "es_US" : "en_US",
       alternateLocale: locale === "es" ? "en_US" : "es_US",
       type: "website",
-      images: [{ url: PHOTOS.heroHome, alt: t("title") }],
+      images: [{ url: ogImage, alt: t("title") }],
     },
     twitter: {
       card: "summary_large_image",
       title: t("title"),
       description: t("description"),
-      images: [PHOTOS.heroHome],
+      images: [ogImage],
     },
     robots: { index: true, follow: true },
   };

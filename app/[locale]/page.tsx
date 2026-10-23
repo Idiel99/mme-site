@@ -28,7 +28,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     name: SITE_NAME,
     url: `${SITE_URL}/${locale}`,
     description: metaT("description"),
-    image: `${SITE_URL}${PHOTOS.heroHome}`,
+    image: new URL(PHOTOS.heroHome, SITE_URL).href,
     telephone: filled(CONTACT.phone),
     email: filled(CONTACT.email),
     inLanguage: locale === "es" ? "es-US" : "en-US",

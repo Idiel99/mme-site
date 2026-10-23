@@ -1,0 +1,259 @@
+{
+  "metadata": {
+    "title": "MME Group — Renovación Exterior · Sur de Florida",
+    "description": "Techos nuevos, stucco, pintura, limpieza a presión y entradas en Miami-Dade y Broward — un solo equipo local con licencia, bien hecho desde la primera vez."
+  },
+  "nav": {
+    "links": {
+      "services": "Servicios",
+      "why": "Por Qué",
+      "work": "Proyectos",
+      "process": "Proceso",
+      "areas": "Zonas",
+      "contact": "Contacto"
+    },
+    "quote": "Cotización Gratis",
+    "call": "Llámenos",
+    "menu": "Menú",
+    "langEn": "EN",
+    "langEs": "ES"
+  },
+  "hero": {
+    "eyebrow": "Renovación exterior · Sur de Florida",
+    "badge": "Licencia y Seguro",
+    "title1": "Transformaciones exteriores",
+    "title2": "que el Sur de Florida confía.",
+    "sub": "Techos nuevos, stucco, pintura, limpieza a presión y entradas — un solo equipo local, bien hecho desde la primera vez.",
+    "trust": {
+      "years": "10+ años",
+      "bilingual": "Bilingüe"
+    },
+    "scrollHint": "Desliza para ver la transformación",
+    "chapters": {
+      "roofing": {
+        "title": "Empieza por arriba.",
+        "accent": "Techos nuevos.",
+        "body": "Techos de teja, asfalto y planos, listos para pasar inspección y resistir la temporada de huracanes."
+      },
+      "stucco": {
+        "title": "Paredes impecables.",
+        "accent": "Stucco.",
+        "body": "Grietas selladas, textura igualada, acabado parejo — instalación y reparación que desaparece en la pared."
+      },
+      "painting": {
+        "title": "Una mano fresca lo cambia todo.",
+        "accent": "Pintura.",
+        "body": "Interior y exterior, preparado e imprimado, con pinturas resistentes al sol de Florida."
+      },
+      "pressure": {
+        "title": "Años de suciedad, fuera.",
+        "accent": "Limpieza a presión.",
+        "body": "Lavado a presión y soft washing suave para techos, paredes, entradas y adoquines."
+      },
+      "driveways": {
+        "title": "Llegue a algo mejor.",
+        "accent": "Entradas.",
+        "body": "Adoquines, concreto y resurfacing que realza todo el frente de la casa."
+      },
+      "more": {
+        "title": "Y todo lo demás.",
+        "accent": "Remodelación exterior.",
+        "body": "Un solo equipo para todo el exterior — el acabado cuadra y el cronograma es suyo."
+      }
+    },
+    "finalTitle": "¿Listo para transformar la suya?",
+    "finalBody": "Estimados gratis. Precios honestos. Atendemos in English y en español."
+  },
+  "services": {
+    "eyebrow": "Lo que hacemos",
+    "title": "Seis formas de realzar su fachada",
+    "sub": "Desde un techo nuevo hasta la entrada donde estaciona — un equipo responsable para todo el exterior.",
+    "items": {
+      "roofing": {
+        "title": "Techos Nuevos",
+        "alt": "New Roofing",
+        "desc": "Instalación y reemplazo de techos de teja, asfalto y planos, según el código y para durar."
+      },
+      "stucco": {
+        "title": "Stucco",
+        "alt": "Stucco",
+        "desc": "Instalación de stucco sin costuras y reparación de grietas con textura igualada a su casa."
+      },
+      "painting": {
+        "title": "Pintura",
+        "alt": "Painting",
+        "desc": "Preparación, imprimación y pinturas premium — interior y exterior, acabado limpio."
+      },
+      "pressure": {
+        "title": "Limpieza a Presión",
+        "alt": "Pressure Cleaning",
+        "desc": "Lavado a presión y soft washing suave para techos, paredes, entradas y adoquines."
+      },
+      "driveways": {
+        "title": "Entradas",
+        "alt": "Driveways",
+        "desc": "Entradas de adoquín, concreto y resurfacing que transforman su acceso."
+      },
+      "more": {
+        "title": "Y Más",
+        "alt": "& More",
+        "desc": "Remodelación exterior general — si está en el exterior de su casa, lo hacemos."
+      }
+    }
+  },
+  "why": {
+    "eyebrow": "Por qué elegir MME",
+    "title": "Una gran inversión merece un equipo de confianza",
+    "sub": "Somos locales, responsables y bilingües — y tratamos su casa como si fuera de nuestra cuadra.",
+    "photoAlt": "Equipo de MME trabajando",
+    "items": {
+      "licensed": {
+        "title": "Licencia y Seguro",
+        "desc": "Totalmente licenciados, garantizados y asegurados. Cada miembro del equipo está cubierto en su propiedad."
+      },
+      "experience": {
+        "title": "10+ Años de Experiencia",
+        "desc": "Más de una década de exteriores en el Sur de Florida — techos, stucco y acabados que perduran."
+      },
+      "guarantee": {
+        "title": "Garantía de Satisfacción",
+        "desc": "No terminamos hasta que esté feliz. Sitios limpios y trabajo que respaldamos."
+      },
+      "local": {
+        "title": "Local del Sur de Florida",
+        "desc": "Nacidos y basados aquí. Conocemos los códigos, el clima y los vecindarios."
+      }
+    },
+    "stats": {
+      "years": "Años de servicio",
+      "projects": "Proyectos completados",
+      "insured": "Licencia y seguro",
+      "rating": "Calificación promedio"
+    }
+  },
+  "work": {
+    "eyebrow": "Antes y después",
+    "title": "Transformaciones reales del Sur de Florida",
+    "sub": "Arrastre el control para ver la diferencia. Reemplace estos ejemplos con las fotos reales de MME para mayor impacto.",
+    "items": {
+      "roofPaint": {
+        "title": "Techo y repintado exterior",
+        "tag": "Techos · Pintura"
+      },
+      "stuccoWash": {
+        "title": "Stucco y soft wash",
+        "tag": "Stucco · Limpieza"
+      },
+      "drivewayFull": {
+        "title": "Entrada y exterior completo",
+        "tag": "Entrada · Y Más"
+      }
+    },
+    "dragHint": "Arrastre",
+    "beforeLabel": "Antes",
+    "afterLabel": "Después",
+    "sliderLabel": "Comparación de antes y después"
+  },
+  "process": {
+    "eyebrow": "Cómo funciona",
+    "title": "Cuatro pasos, cero sorpresas",
+    "sub": "Un camino claro desde la primera llamada hasta su casa terminada.",
+    "steps": {
+      "consult": {
+        "title": "Consulta Gratis",
+        "desc": "Visitamos, escuchamos y evaluamos su exterior — sin presión, sin costo."
+      },
+      "quote": {
+        "title": "Cotización Clara",
+        "desc": "Un estimado escrito y detallado con precios honestos y un cronograma real."
+      },
+      "work": {
+        "title": "Manos a la Obra",
+        "desc": "Nuestro equipo con licencia llega a tiempo y mantiene el sitio limpio."
+      },
+      "done": {
+        "title": "Bien Hecho",
+        "desc": "Recorrido final juntos — no terminamos hasta que esté satisfecho."
+      }
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Lo que dicen los clientes",
+    "title": "La confianza de los dueños del Sur de Florida",
+    "items": {
+      "maria": "“MME nos cambió el techo y repintó todo el exterior. Profesionales, puntuales, y nos explicaron todo en español. La casa se ve nueva.”",
+      "carlos": "“Hicimos reparación de stucco y lavado a presión. Precio justo, trabajo limpio, y ni se nota dónde estaban las grietas.”",
+      "jennifer": "“La nueva entrada de adoquines cambió por completo el frente de la casa. El equipo fue respetuoso y terminó antes de tiempo.”"
+    },
+    "note": "Las reseñas son ejemplos — reemplácelas con reseñas reales de Google / Facebook de MME.",
+    "rating": "5 de 5 estrellas"
+  },
+  "areas": {
+    "eyebrow": "Dónde trabajamos",
+    "title": "Servimos todo el Sur de Florida",
+    "sub": "Estimados la misma semana en los condados de Miami-Dade y Broward.",
+    "counties": {
+      "miamiDade": "Condado Miami-Dade",
+      "broward": "Condado Broward"
+    },
+    "outside": "¿Fuera de estas zonas? Llámenos — viajamos por el proyecto correcto."
+  },
+  "contact": {
+    "eyebrow": "Empecemos",
+    "title": "Obtenga su cotización gratis",
+    "sub": "Cuéntenos sobre su proyecto y le responderemos rápido — en inglés o español.",
+    "fields": {
+      "name": "Nombre completo",
+      "phone": "Teléfono",
+      "email": "Correo",
+      "service": "Servicio que necesita",
+      "message": "Cuéntenos sobre su proyecto"
+    },
+    "placeholders": {
+      "name": "Juan Pérez",
+      "phone": "(786) 555-0100",
+      "email": "you@email.com",
+      "message": "Cuéntenos qué necesita…"
+    },
+    "serviceOptions": {
+      "placeholder": "Seleccione un servicio…",
+      "roofing": "Techos Nuevos",
+      "stucco": "Stucco",
+      "painting": "Pintura",
+      "pressure": "Limpieza a Presión",
+      "driveways": "Entradas",
+      "more": "Otro / Y Más"
+    },
+    "submit": "Solicitar Mi Cotización",
+    "disclaimer": "Formulario de demostración — los envíos aún no se mandan.",
+    "thanksTitle": "¡Gracias!",
+    "thanksBody": "Le contactaremos muy pronto.",
+    "reach": "O contáctenos directamente",
+    "phoneLabel": "Llame o texto",
+    "emailLabel": "Escríbanos",
+    "hoursLabel": "Horario",
+    "hoursValue": "Lun–Sáb · 8am–6pm",
+    "addressLabel": "Zona de servicio",
+    "addressValue": "Miami-Dade y Broward, FL"
+  },
+  "footer": {
+    "tagline": "Renovación exterior residencial y comercial en el Sur de Florida. Techos, stucco, pintura, limpieza a presión y entradas.",
+    "servicesTitle": "Servicios",
+    "companyTitle": "Empresa",
+    "contactTitle": "Contacto",
+    "company": {
+      "why": "Por Qué Elegirnos",
+      "work": "Proyectos",
+      "areas": "Zonas de Servicio",
+      "contact": "Cotización Gratis"
+    },
+    "rights": "Todos los derechos reservados.",
+    "license": "Licencia FL #{license}",
+    "region": "Miami-Dade y Broward, FL"
+  },
+  "notFound": {
+    "title": "Página No Encontrada",
+    "body": "La página que busca no existe o fue movida.",
+    "home": "Ir al Inicio"
+  }
+}

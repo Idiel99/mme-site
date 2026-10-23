@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+/* MME palette — deep navy + trust blue + silver (forked from the MGM Cryo system). */
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-outfit: var(--font-outfit);
+  --font-inter: var(--font-inter);
+
+  --color-ink: #0A1626;          /* deepest navy ink */
+  --color-ink-2: #0F2138;        /* navy panel / dark card */
+  --color-ink-3: #16314f;        /* lighter navy */
+  --color-surface: #0a1322;      /* dark section bg */
+  --color-surface-2: #0b1a2e;    /* dark section bg 2 */
+  --color-footer: #070f1a;
+  --color-brand: #1A6FE0;        /* primary trust blue */
+  --color-brand-deep: #0B47A6;   /* deep blue */
+  --color-glow: #5FB4F7;         /* light sky accent */
+  --color-glow-soft: #BFE0FB;    /* pale sky */
+  --color-silver: #C4CFDC;       /* silver metallic */
+  --color-steel: #8696A8;        /* muted steel */
+  --color-silver-lite: #EEF3F9;  /* near-white silver wash */
+  --color-paper: #F5F8FC;        /* light input bg */
+  --color-line: #D8E2EE;         /* hairline on light */
+  --color-hair: rgb(196 207 220 / 0.16); /* hairline on dark */
+  --color-gold: #F5A623;
+
+  --animate-ken: ken 14s ease-in-out infinite alternate;
+  --animate-float: float 2.6s ease-in-out infinite;
+  --animate-copy: copy-fade 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  @keyframes ken {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.12); }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  @keyframes copy-fade {
+    from { transform: translateY(18px); }
+    to { transform: none; }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+  background-color: var(--color-surface);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-outfit), sans-serif;
+}
+
+::selection {
+  background: var(--color-brand);
+  color: #fff;
+}
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: var(--color-silver); border-radius: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+/* Silver metallic hairline */
+.silver-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-silver), transparent);
+}
+
+/* Blue → pale-sky gradient text used in hero headlines */
+.text-gradient {
+  background: linear-gradient(120deg, #5FB4F7, #BFE0FB);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Scroll reveal (see components/Reveal.tsx) */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.9s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.reveal.in { opacity: 1; transform: none; }
+.reveal-d1 { transition-delay: 0.08s; }
+.reveal-d2 { transition-delay: 0.16s; }
+.reveal-d3 { transition-delay: 0.24s; }
+.reveal-d4 { transition-delay: 0.32s; }
+.reveal-d5 { transition-delay: 0.4s; }
+
+/* Buttons */
+.btn-primary {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  background: linear-gradient(135deg, var(--color-brand), var(--color-brand-deep));
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 16px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 14px 34px -10px rgba(26, 111, 224, 0.65);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 44px -12px rgba(26, 111, 224, 0.8);
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 16px 26px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  transition: background 0.25s, border-color 0.25s;
+}
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Respect users who ask for less motion */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .animate-ken, .animate-float { animation: none; }
+}

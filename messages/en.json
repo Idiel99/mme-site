@@ -1,0 +1,259 @@
+{
+  "metadata": {
+    "title": "MME Group — Exterior Renovation · South Florida",
+    "description": "New roofing, stucco, paint, pressure cleaning, and driveways across Miami-Dade and Broward — one licensed local crew, done right the first time."
+  },
+  "nav": {
+    "links": {
+      "services": "Services",
+      "why": "Why Us",
+      "work": "Our Work",
+      "process": "Process",
+      "areas": "Areas",
+      "contact": "Contact"
+    },
+    "quote": "Get a Free Quote",
+    "call": "Call Now",
+    "menu": "Menu",
+    "langEn": "EN",
+    "langEs": "ES"
+  },
+  "hero": {
+    "eyebrow": "Exterior renovation · South Florida",
+    "badge": "Licensed & Insured",
+    "title1": "Exterior transformations",
+    "title2": "South Florida trusts.",
+    "sub": "New roofing, stucco, paint, pressure cleaning, and driveways — handled by one local crew, done right the first time.",
+    "trust": {
+      "years": "10+ yrs",
+      "bilingual": "Bilingual"
+    },
+    "scrollHint": "Scroll to see the transformation",
+    "chapters": {
+      "roofing": {
+        "title": "It starts at the top.",
+        "accent": "New roofing.",
+        "body": "Tile, shingle, and flat roofs built to pass inspection and survive hurricane season."
+      },
+      "stucco": {
+        "title": "Walls made flawless.",
+        "accent": "Stucco.",
+        "body": "Cracks sealed, texture matched, finish even — installation and repair that disappears into the wall."
+      },
+      "painting": {
+        "title": "A fresh coat changes everything.",
+        "accent": "Painting.",
+        "body": "Interior and exterior, prepped and primed, with coatings rated for the Florida sun."
+      },
+      "pressure": {
+        "title": "Years of grime, gone.",
+        "accent": "Pressure cleaning.",
+        "body": "Pressure washing and gentle soft washing for roofs, walls, driveways, and pavers."
+      },
+      "driveways": {
+        "title": "Arrive on something better.",
+        "accent": "Driveways.",
+        "body": "Pavers, poured concrete, and resurfacing that lifts the whole front of the house."
+      },
+      "more": {
+        "title": "And everything in between.",
+        "accent": "Exterior remodeling.",
+        "body": "One crew for the whole exterior — so the finish lines up and the timeline stays yours."
+      }
+    },
+    "finalTitle": "Ready to transform yours?",
+    "finalBody": "Free estimates. Honest pricing. We answer in English y en español."
+  },
+  "services": {
+    "eyebrow": "What we do",
+    "title": "Six ways we lift your curb appeal",
+    "sub": "From a brand-new roof to the driveway you park on — one accountable crew for the entire exterior.",
+    "items": {
+      "roofing": {
+        "title": "New Roofing",
+        "alt": "Techos Nuevos",
+        "desc": "Tile, shingle & flat-roof installation and replacement, built to code and to last."
+      },
+      "stucco": {
+        "title": "Stucco",
+        "alt": "Stucco",
+        "desc": "Seamless stucco installation and crack repair with texture matched to your home."
+      },
+      "painting": {
+        "title": "Painting",
+        "alt": "Pintura",
+        "desc": "Prep, prime, and premium coatings — interior and exterior, finished clean."
+      },
+      "pressure": {
+        "title": "Pressure Cleaning",
+        "alt": "Limpieza a Presión",
+        "desc": "Pressure washing and gentle soft washing for roofs, walls, drives, and pavers."
+      },
+      "driveways": {
+        "title": "Driveways",
+        "alt": "Entradas",
+        "desc": "Paver, concrete, and resurfacing driveways that transform your entrance."
+      },
+      "more": {
+        "title": "& More",
+        "alt": "Y Más",
+        "desc": "General exterior remodeling — if it's on the outside of your home, we handle it."
+      }
+    }
+  },
+  "why": {
+    "eyebrow": "Why choose MME",
+    "title": "A major home investment deserves a crew you can trust",
+    "sub": "We're local, accountable, and bilingual — and we treat your home like it's on our own street.",
+    "photoAlt": "MME crew at work",
+    "items": {
+      "licensed": {
+        "title": "Licensed & Insured",
+        "desc": "Fully licensed, bonded, and insured. Every crew member is covered on your property."
+      },
+      "experience": {
+        "title": "10+ Years Experience",
+        "desc": "A decade-plus of South Florida exteriors — roofs, stucco, and finishes that hold up."
+      },
+      "guarantee": {
+        "title": "Satisfaction Guarantee",
+        "desc": "We're not done until you're happy. Clean job sites and work we stand behind."
+      },
+      "local": {
+        "title": "Local to South Florida",
+        "desc": "Born and based here. We know the codes, the climate, and the neighborhoods."
+      }
+    },
+    "stats": {
+      "years": "Years in business",
+      "projects": "Projects completed",
+      "insured": "Licensed & insured",
+      "rating": "Average rating"
+    }
+  },
+  "work": {
+    "eyebrow": "Before & after",
+    "title": "Real South Florida transformations",
+    "sub": "Drag the slider to see the difference. Swap these placeholders with MME's own project photos for the strongest impact.",
+    "items": {
+      "roofPaint": {
+        "title": "Roof & exterior repaint",
+        "tag": "Roofing · Paint"
+      },
+      "stuccoWash": {
+        "title": "Stucco refresh & soft wash",
+        "tag": "Stucco · Cleaning"
+      },
+      "drivewayFull": {
+        "title": "Driveway & full exterior",
+        "tag": "Driveway · & More"
+      }
+    },
+    "dragHint": "Drag",
+    "beforeLabel": "Before",
+    "afterLabel": "After",
+    "sliderLabel": "Before and after comparison"
+  },
+  "process": {
+    "eyebrow": "How it works",
+    "title": "Four steps, zero surprises",
+    "sub": "A clear path from first call to finished home.",
+    "steps": {
+      "consult": {
+        "title": "Free Consultation",
+        "desc": "We visit, listen, and assess your exterior — no pressure, no fee."
+      },
+      "quote": {
+        "title": "Clear Quote",
+        "desc": "A written, itemized estimate with honest pricing and a real timeline."
+      },
+      "work": {
+        "title": "We Get to Work",
+        "desc": "Our licensed crew shows up on schedule and keeps the site clean."
+      },
+      "done": {
+        "title": "Done Right",
+        "desc": "Final walkthrough together — we're not finished until you're satisfied."
+      }
+    }
+  },
+  "testimonials": {
+    "eyebrow": "What customers say",
+    "title": "Trusted by South Florida homeowners",
+    "items": {
+      "maria": "“MME re-roofed our home and repainted the whole exterior. Professional, on time, and they explained everything in Spanish. The house looks brand new.”",
+      "carlos": "“Got a stucco repair and pressure washing done. Fair price, clean work, and you can't even tell where the old cracks were.”",
+      "jennifer": "“New paver driveway completely changed the front of our house. The crew was respectful and finished ahead of schedule.”"
+    },
+    "note": "Reviews shown are placeholders — swap in MME's real Google / Facebook reviews.",
+    "rating": "5 out of 5 stars"
+  },
+  "areas": {
+    "eyebrow": "Where we work",
+    "title": "Serving all of South Florida",
+    "sub": "Same-week estimates across Miami-Dade and Broward counties.",
+    "counties": {
+      "miamiDade": "Miami-Dade County",
+      "broward": "Broward County"
+    },
+    "outside": "Outside these areas? Call us — we travel for the right project."
+  },
+  "contact": {
+    "eyebrow": "Get started",
+    "title": "Get your free quote",
+    "sub": "Tell us about your project and we'll get back to you fast — in English or Spanish.",
+    "fields": {
+      "name": "Full name",
+      "phone": "Phone",
+      "email": "Email",
+      "service": "Service needed",
+      "message": "Tell us about your project"
+    },
+    "placeholders": {
+      "name": "Jane Doe",
+      "phone": "(786) 555-0100",
+      "email": "you@email.com",
+      "message": "Tell us what you need…"
+    },
+    "serviceOptions": {
+      "placeholder": "Select a service…",
+      "roofing": "New Roofing",
+      "stucco": "Stucco",
+      "painting": "Painting",
+      "pressure": "Pressure Cleaning",
+      "driveways": "Driveways",
+      "more": "Other / & More"
+    },
+    "submit": "Request My Free Quote",
+    "disclaimer": "This is a demo form — submissions aren't sent yet.",
+    "thanksTitle": "Thank you!",
+    "thanksBody": "We'll be in touch very soon.",
+    "reach": "Or reach us directly",
+    "phoneLabel": "Call or text",
+    "emailLabel": "Email us",
+    "hoursLabel": "Hours",
+    "hoursValue": "Mon–Sat · 8am–6pm",
+    "addressLabel": "Service area",
+    "addressValue": "Miami-Dade & Broward, FL"
+  },
+  "footer": {
+    "tagline": "Exterior home & commercial renovation across South Florida. Roofing, stucco, paint, pressure cleaning & driveways.",
+    "servicesTitle": "Services",
+    "companyTitle": "Company",
+    "contactTitle": "Contact",
+    "company": {
+      "why": "Why Choose Us",
+      "work": "Our Work",
+      "areas": "Service Areas",
+      "contact": "Free Quote"
+    },
+    "rights": "All rights reserved.",
+    "license": "FL License #{license}",
+    "region": "Miami-Dade & Broward, FL"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "body": "The page you're looking for doesn't exist or has been moved.",
+    "home": "Go to Homepage"
+  }
+}

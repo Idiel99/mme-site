@@ -4,11 +4,22 @@ import type { IconName } from "./icons";
 export const SITE_NAME = "MME Group";
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
-// Placeholders — fill in before launch.
+// One phone line per language. `tel` is the dialable E.164 form used in tel: links.
+export const PHONES = {
+  en: { display: "786-308-7642", tel: "+17863087642" },
+  es: { display: "786-308-7642", tel: "+17863087642" },
+} as const;
+
+export type PhoneLang = keyof typeof PHONES;
+
+// The line to show where there's room for only one number: the visitor's language.
+export function phoneFor(locale: string) {
+  return PHONES[locale === "es" ? "es" : "en"];
+}
+
 export const CONTACT = {
-  phone: "[PHONE]",
-  email: "[EMAIL]",
-  license: "[LICENSE]",
+  email: "mmegroupenterpriseinc@gmail.com",
+  license: "[LICENSE]", // placeholder — fill in before launch
   instagram: "https://www.instagram.com/mme__group",
   facebook: "https://www.facebook.com/share/1EQkhJMWvH",
 };

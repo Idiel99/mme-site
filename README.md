@@ -79,12 +79,12 @@ tests/                       — message parity + slider behaviour
 
 - **Copy** → `messages/en.json` and `messages/es.json`. Keep the keys identical; `npm test` fails if they drift.
 - **Lists** (services, testimonials, cities, …) → the ids live in `lib/site.ts`; each id needs matching copy in both message files (also checked by tests).
-- **Contact details** → `CONTACT` in `lib/site.ts`.
+- **Contact details** → `PHONES` (one line per language) and `CONTACT` in `lib/site.ts`.
+  The hero and service-area strip show the visitor's language line; Contact and the footer list both.
 
 ## Before launch
 
-- Replace the placeholders in `lib/site.ts`: `[PHONE]`, `[EMAIL]`, `[LICENSE]`.
-  (Placeholder phone/email are left out of the JSON-LD automatically.)
+- Replace the `[LICENSE]` placeholder in `lib/site.ts`.
 - Swap the stock photos in `public/images/` for real MME project photos.
 - Replace the placeholder reviews in `messages/*.json` → `testimonials.items`, and remove the `testimonials.note` / `work.sub` placeholder hints.
 - Hook the quote form up to a real destination (email service, CRM, or an API route) and remove `contact.disclaimer`.

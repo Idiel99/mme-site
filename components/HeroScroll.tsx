@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
 import { Icon } from "@/lib/icons";
-import { CONTACT, HERO_CHAPTERS, PHOTOS } from "@/lib/site";
+import { HERO_CHAPTERS, PHOTOS, phoneFor } from "@/lib/site";
 
 // 0 → 1 as the (tall) section scrolls past the viewport; drives the sticky stage.
 function useScrollProgress(ref: React.RefObject<HTMLElement | null>) {
@@ -108,14 +108,15 @@ function Heading({ s, className, style }: { s: Stage; className: string; style?:
 
 function CtaRow({ compact = false }: { compact?: boolean }) {
   const t = useTranslations("nav");
+  const phone = phoneFor(useLocale());
   return (
     <div className={`flex flex-wrap ${compact ? "gap-[10px]" : "mb-7 gap-[14px]"}`}>
       <a href="#contact" className={`btn-primary ${compact ? "!px-5 !py-[13px] !text-sm" : ""}`}>
         {t("quote")} <Icon name="arrow" className="h-4 w-4" />
       </a>
-      <a href={`tel:${CONTACT.phone}`} className={`btn-ghost ${compact ? "!px-4 !py-[13px] !text-sm" : ""}`}>
+      <a href={`tel:${phone.tel}`} className={`btn-ghost ${compact ? "!px-4 !py-[13px] !text-sm" : ""}`}>
         <Icon name="phone" className="h-[17px] w-[17px]" />
-        {CONTACT.phone}
+        {phone.display}
       </a>
     </div>
   );

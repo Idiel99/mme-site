@@ -3,13 +3,18 @@ import ContactForm from "./ContactForm";
 import Reveal from "./Reveal";
 import SectionHead from "./SectionHead";
 import { Icon, type IconName } from "@/lib/icons";
-import { CONTACT } from "@/lib/site";
+import { CONTACT, PHONES, type PhoneLang } from "@/lib/site";
 
 export default function Contact() {
   const t = useTranslations("contact");
 
   const rows: { icon: IconName; label: string; value: string; href?: string }[] = [
-    { icon: "phone", label: t("phoneLabel"), value: CONTACT.phone, href: `tel:${CONTACT.phone}` },
+    ...(Object.keys(PHONES) as PhoneLang[]).map((lang) => ({
+      icon: "phone" as const,
+      label: `${t("phoneLabel")} · ${t(`lines.${lang}`)}`,
+      value: PHONES[lang].display,
+      href: `tel:${PHONES[lang].tel}`,
+    })),
     { icon: "mail", label: t("emailLabel"), value: CONTACT.email, href: `mailto:${CONTACT.email}` },
     { icon: "clock", label: t("hoursLabel"), value: t("hoursValue") },
     { icon: "pin", label: t("addressLabel"), value: t("addressValue") },
@@ -33,9 +38,10 @@ export default function Contact() {
                   <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-[11px] border border-glow/30 bg-glow/15 text-glow">
                     <Icon name={c.icon} className="h-[22px] w-[22px]" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <div className="text-[11px] font-bold uppercase tracking-[.5px] text-white/50">{c.label}</div>
-                    <div className="text-base font-bold text-white" style={{ fontFamily: "var(--font-outfit), sans-serif" }}>
+                    {/* Long values (the email) wrap instead of overflowing the row on narrow phones */}
+                    <div className="text-base font-bold text-white [overflow-wrap:anywhere]" style={{ fontFamily: "var(--font-outfit), sans-serif" }}>
                       {c.value}
                     </div>
                   </div>
@@ -43,7 +49,7 @@ export default function Contact() {
               );
               const cls = "flex items-center gap-[15px] rounded-[13px] border border-hair bg-white/5 p-[15px]";
               return (
-                <Reveal key={c.icon} delay={((i % 3) + 1) as 1 | 2 | 3}>
+                <Reveal key={c.label} delay={((i % 3) + 1) as 1 | 2 | 3}>
                   {c.href ? (
                     <a href={c.href} className={`${cls} transition-colors duration-200 hover:border-glow/40`}>
                       {inner}

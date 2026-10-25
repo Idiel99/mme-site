@@ -1,11 +1,12 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Reveal from "./Reveal";
 import SectionHead from "./SectionHead";
 import { Icon } from "@/lib/icons";
-import { CONTACT, COUNTIES } from "@/lib/site";
+import { COUNTIES, phoneFor } from "@/lib/site";
 
 export default function Areas() {
   const t = useTranslations("areas");
+  const phone = phoneFor(useLocale());
   return (
     <section id="areas" className="bg-surface px-[clamp(20px,5vw,48px)] py-[clamp(72px,10vw,120px)]">
       <div className="mx-auto max-w-[1200px]">
@@ -33,8 +34,8 @@ export default function Areas() {
           <div className="mt-6 flex flex-wrap items-center gap-[14px] rounded-2xl bg-gradient-to-br from-ink-2 to-ink-3 px-[26px] py-5 text-white">
             <Icon name="phone" className="h-[22px] w-[22px] text-glow" />
             <span className="min-w-[200px] flex-1 text-[15px] text-white/85">{t("outside")}</span>
-            <a href={`tel:${CONTACT.phone}`} className="whitespace-nowrap text-[15px] font-bold text-glow">
-              {CONTACT.phone}
+            <a href={`tel:${phone.tel}`} className="whitespace-nowrap text-[15px] font-bold text-glow">
+              {phone.display}
             </a>
           </div>
         </Reveal>

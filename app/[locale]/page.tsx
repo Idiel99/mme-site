@@ -10,7 +10,7 @@ import Areas from "@/components/Areas";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
-import { CONTACT, COUNTIES, PHOTOS, SERVICES, SITE_NAME, SITE_URL } from "@/lib/site";
+import { CONTACT, COUNTIES, PHONES, PHOTOS, SERVICES, SITE_NAME, SITE_URL, type PhoneLang } from "@/lib/site";
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -19,9 +19,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const metaT = await getTranslations({ locale, namespace: "metadata" });
   const servicesT = await getTranslations({ locale, namespace: "services" });
 
-  // Skip contact fields that are still "[PLACEHOLDER]" so search engines never index them.
-  const filled = (v: string) => (v.startsWith("[") ? undefined : v);
-
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
@@ -29,8 +26,14 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     url: `${SITE_URL}/${locale}`,
     description: metaT("description"),
     image: new URL(PHOTOS.heroHome, SITE_URL).href,
-    telephone: filled(CONTACT.phone),
-    email: filled(CONTACT.email),
+    telephone: PHONES.en.tel,
+    email: CONTACT.email,
+    contactPoint: (Object.keys(PHONES) as PhoneLang[]).map((lang) => ({
+      "@type": "ContactPoint",
+      telephone: PHONES[lang].tel,
+      contactType: "customer service",
+      availableLanguage: lang === "es" ? "Spanish" : "English",
+    })),
     inLanguage: locale === "es" ? "es-US" : "en-US",
     availableLanguage: ["en", "es"],
     address: {

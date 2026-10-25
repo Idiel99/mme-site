@@ -1,16 +1,17 @@
 import { useTranslations } from "next-intl";
 import Logo from "./Logo";
-import { CONTACT, SERVICES } from "@/lib/site";
+import { CONTACT, PHONES, SERVICES, type PhoneLang } from "@/lib/site";
 
 const COMPANY_LINKS = ["why", "work", "areas", "contact"] as const;
 
 export default function Footer() {
   const t = useTranslations("footer");
   const ts = useTranslations("services");
+  const tc = useTranslations("contact");
 
   const heading = "mb-4 text-[13px] font-bold uppercase tracking-[1px] text-white";
   const list = "m-0 flex list-none flex-col gap-[11px] p-0";
-  const link = "text-sm text-white/50 transition-colors duration-200 hover:text-white";
+  const link = "text-sm text-white/50 transition-colors duration-200 [overflow-wrap:anywhere] hover:text-white";
 
   return (
     <footer className="border-t border-silver/10 bg-footer px-[clamp(20px,5vw,48px)] pt-[clamp(48px,7vw,72px)] pb-8">
@@ -47,7 +48,13 @@ export default function Footer() {
           <div>
             <h4 className={heading}>{t("contactTitle")}</h4>
             <ul className={list}>
-              <li><a href={`tel:${CONTACT.phone}`} className={link}>{CONTACT.phone}</a></li>
+              {(Object.keys(PHONES) as PhoneLang[]).map((lang) => (
+                <li key={lang}>
+                  <a href={`tel:${PHONES[lang].tel}`} className={link}>
+                    <span className="text-white/35">{tc(`lines.${lang}`)}:</span> {PHONES[lang].display}
+                  </a>
+                </li>
+              ))}
               <li><a href={`mailto:${CONTACT.email}`} className={link}>{CONTACT.email}</a></li>
               <li><a href={CONTACT.instagram} target="_blank" rel="noopener noreferrer" className={link}>Instagram</a></li>
               <li><a href={CONTACT.facebook} target="_blank" rel="noopener noreferrer" className={link}>Facebook</a></li>

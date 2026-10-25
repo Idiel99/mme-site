@@ -230,6 +230,10 @@
     "thanksBody": "Le contactaremos muy pronto.",
     "reach": "O contáctenos directamente",
     "phoneLabel": "Llame o texto",
+    "lines": {
+      "en": "Inglés",
+      "es": "Español"
+    },
     "emailLabel": "Escríbanos",
     "hoursLabel": "Horario",
     "hoursValue": "Lun–Sáb · 8am–6pm",

@@ -36,8 +36,8 @@ export default function Navbar() {
       }`}
     >
       <div className="mx-auto flex h-[70px] max-w-[1280px] items-center justify-between px-[clamp(20px,4vw,48px)]">
-        <a href="#top" aria-label="MME Group" onClick={() => setOpen(false)}>
-          <Logo size={38} id="nav-logo" />
+        <a href="#top" onClick={() => setOpen(false)}>
+          <Logo height={64} priority />
         </a>
 
         <ul className="m-0 hidden list-none gap-7 p-0 min-[981px]:flex">

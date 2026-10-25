@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import EmailText from "./EmailText";
 import Logo from "./Logo";
 import { CONTACT, PHONES, SERVICES, type PhoneLang } from "@/lib/site";
 
@@ -11,14 +12,14 @@ export default function Footer() {
 
   const heading = "mb-4 text-[13px] font-bold uppercase tracking-[1px] text-white";
   const list = "m-0 flex list-none flex-col gap-[11px] p-0";
-  const link = "text-sm text-white/50 transition-colors duration-200 [overflow-wrap:anywhere] hover:text-white";
+  const link = "text-sm text-white/50 transition-colors duration-200 hover:text-white";
 
   return (
     <footer className="border-t border-silver/10 bg-footer px-[clamp(20px,5vw,48px)] pt-[clamp(48px,7vw,72px)] pb-8">
       <div className="mx-auto max-w-[1200px]">
         <div className="mb-11 grid grid-cols-1 gap-7 min-[521px]:grid-cols-2 min-[761px]:grid-cols-[1.6fr_1fr_1fr_1.2fr] min-[761px]:gap-10">
           <div>
-            <Logo size={40} id="footer-logo" />
+            <Logo height={115} />
             <p className="mt-[18px] mb-0 max-w-[320px] text-sm leading-[1.65] text-white/50">{t("tagline")}</p>
           </div>
           <div>
@@ -51,11 +52,12 @@ export default function Footer() {
               {(Object.keys(PHONES) as PhoneLang[]).map((lang) => (
                 <li key={lang}>
                   <a href={`tel:${PHONES[lang].tel}`} className={link}>
-                    <span className="text-white/35">{tc(`lines.${lang}`)}:</span> {PHONES[lang].display}
+                    <span className="text-white/35">{tc(`lines.${lang}`)}:</span>{" "}
+                    <span className="whitespace-nowrap">{PHONES[lang].display}</span>
                   </a>
                 </li>
               ))}
-              <li><a href={`mailto:${CONTACT.email}`} className={link}>{CONTACT.email}</a></li>
+              <li><a href={`mailto:${CONTACT.email}`} className={link}><EmailText email={CONTACT.email} /></a></li>
               <li><a href={CONTACT.instagram} target="_blank" rel="noopener noreferrer" className={link}>Instagram</a></li>
               <li><a href={CONTACT.facebook} target="_blank" rel="noopener noreferrer" className={link}>Facebook</a></li>
             </ul>

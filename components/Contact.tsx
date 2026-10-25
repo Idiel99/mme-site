@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import ContactForm from "./ContactForm";
+import EmailText from "./EmailText";
 import Reveal from "./Reveal";
 import SectionHead from "./SectionHead";
 import { Icon, type IconName } from "@/lib/icons";
@@ -8,14 +9,15 @@ import { CONTACT, PHONES, type PhoneLang } from "@/lib/site";
 export default function Contact() {
   const t = useTranslations("contact");
 
-  const rows: { icon: IconName; label: string; value: string; href?: string }[] = [
+  const rows: { icon: IconName; label: string; value: React.ReactNode; href?: string }[] = [
     ...(Object.keys(PHONES) as PhoneLang[]).map((lang) => ({
       icon: "phone" as const,
       label: `${t("phoneLabel")} · ${t(`lines.${lang}`)}`,
-      value: PHONES[lang].display,
+      // Hyphens are line-break points; keep the number on one line.
+      value: <span className="whitespace-nowrap">{PHONES[lang].display}</span>,
       href: `tel:${PHONES[lang].tel}`,
     })),
-    { icon: "mail", label: t("emailLabel"), value: CONTACT.email, href: `mailto:${CONTACT.email}` },
+    { icon: "mail", label: t("emailLabel"), value: <EmailText email={CONTACT.email} />, href: `mailto:${CONTACT.email}` },
     { icon: "clock", label: t("hoursLabel"), value: t("hoursValue") },
     { icon: "pin", label: t("addressLabel"), value: t("addressValue") },
   ];
@@ -40,8 +42,8 @@ export default function Contact() {
                   </div>
                   <div className="min-w-0">
                     <div className="text-[11px] font-bold uppercase tracking-[.5px] text-white/50">{c.label}</div>
-                    {/* Long values (the email) wrap instead of overflowing the row on narrow phones */}
-                    <div className="text-base font-bold text-white [overflow-wrap:anywhere]" style={{ fontFamily: "var(--font-outfit), sans-serif" }}>
+                    {/* The email breaks at "@" first; break-words is only a last resort on the narrowest phones */}
+                    <div className="text-base font-bold text-white break-words" style={{ fontFamily: "var(--font-outfit), sans-serif" }}>
                       {c.value}
                     </div>
                   </div>

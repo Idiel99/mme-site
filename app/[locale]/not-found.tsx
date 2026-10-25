@@ -8,7 +8,7 @@ export default function NotFound() {
     <div className="flex min-h-screen items-center justify-center bg-[linear-gradient(165deg,var(--color-ink),#0a2747)] px-4">
       <div className="max-w-lg text-center">
         <div className="mb-8 flex justify-center">
-          <Logo size={44} id="nf-logo" />
+          <Logo height={110} />
         </div>
         <div className="mb-4 text-8xl font-black text-glow" style={{ fontFamily: "var(--font-outfit), sans-serif" }}>
           404

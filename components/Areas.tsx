@@ -8,7 +8,7 @@ export default function Areas() {
   const t = useTranslations("areas");
   const phone = phoneFor(useLocale());
   return (
-    <section id="areas" className="bg-surface px-[clamp(20px,5vw,48px)] py-[clamp(72px,10vw,120px)]">
+    <section id="areas" className="bg-surface-2 px-[clamp(20px,5vw,48px)] py-[clamp(72px,10vw,120px)]">
       <div className="mx-auto max-w-[1200px]">
         <SectionHead eyebrow={t("eyebrow")} title={t("title")} sub={t("sub")} />
         <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-[22px]">

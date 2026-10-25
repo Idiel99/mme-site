@@ -6,7 +6,6 @@ import {
   NAV_LINKS,
   PROCESS_STEPS,
   SERVICES,
-  TESTIMONIALS,
   WHY_ITEMS,
   WHY_STATS,
   WORK_ITEMS,
@@ -48,7 +47,6 @@ describe("messages", () => {
     ...WHY_STATS.map((s) => `why.stats.${s.key}`),
     ...WORK_ITEMS.map((w) => `work.items.${w.key}.title`),
     ...PROCESS_STEPS.map((k) => `process.steps.${k}.title`),
-    ...TESTIMONIALS.map((r) => `testimonials.items.${r.key}`),
     ...COUNTIES.map((c) => `areas.counties.${c.key}`),
   ];
 

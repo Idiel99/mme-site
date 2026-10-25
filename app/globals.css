@@ -22,7 +22,6 @@
   --color-paper: #F5F8FC;        /* light input bg */
   --color-line: #D8E2EE;         /* hairline on light */
   --color-hair: rgb(196 207 220 / 0.16); /* hairline on dark */
-  --color-gold: #F5A623;
 
   --animate-ken: ken 14s ease-in-out infinite alternate;
   --animate-float: float 2.6s ease-in-out infinite;

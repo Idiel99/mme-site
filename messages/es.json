@@ -189,17 +189,6 @@
       }
     }
   },
-  "testimonials": {
-    "eyebrow": "Lo que dicen los clientes",
-    "title": "La confianza de los dueños del Sur de Florida",
-    "items": {
-      "maria": "“MME nos cambió el techo y repintó todo el exterior. Profesionales, puntuales, y nos explicaron todo en español. La casa se ve nueva.”",
-      "carlos": "“Hicimos reparación de stucco y lavado a presión. Precio justo, trabajo limpio, y ni se nota dónde estaban las grietas.”",
-      "jennifer": "“La nueva entrada de adoquines cambió por completo el frente de la casa. El equipo fue respetuoso y terminó antes de tiempo.”"
-    },
-    "note": "Las reseñas son ejemplos — reemplácelas con reseñas reales de Google / Facebook de MME.",
-    "rating": "5 de 5 estrellas"
-  },
   "areas": {
     "eyebrow": "Dónde trabajamos",
     "title": "Servimos todo el Sur de Florida",

@@ -75,12 +75,6 @@ export const WORK_ITEMS = ["stuccoPaint", "roofValley", "roofClean", "wallWash",
 
 export const PROCESS_STEPS = ["consult", "quote", "work", "done"] as const;
 
-export const TESTIMONIALS = [
-  { key: "maria", name: "Maria G.", loc: "Miami, FL" },
-  { key: "carlos", name: "Carlos R.", loc: "Hialeah, FL" },
-  { key: "jennifer", name: "Jennifer P.", loc: "Fort Lauderdale, FL" },
-];
-
 export const COUNTIES = [
   {
     key: "miamiDade",

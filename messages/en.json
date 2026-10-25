@@ -189,17 +189,6 @@
       }
     }
   },
-  "testimonials": {
-    "eyebrow": "What customers say",
-    "title": "Trusted by South Florida homeowners",
-    "items": {
-      "maria": "“MME re-roofed our home and repainted the whole exterior. Professional, on time, and they explained everything in Spanish. The house looks brand new.”",
-      "carlos": "“Got a stucco repair and pressure washing done. Fair price, clean work, and you can't even tell where the old cracks were.”",
-      "jennifer": "“New paver driveway completely changed the front of our house. The crew was respectful and finished ahead of schedule.”"
-    },
-    "note": "Reviews shown are placeholders — swap in MME's real Google / Facebook reviews.",
-    "rating": "5 out of 5 stars"
-  },
   "areas": {
     "eyebrow": "Where we work",
     "title": "Serving all of South Florida",

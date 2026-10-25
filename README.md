@@ -64,7 +64,7 @@ components/
   BeforeAfterSlider.tsx      — draggable / keyboard comparison slider      (client)
   ContactForm.tsx            — demo quote form                             (client)
   Reveal.tsx                 — fade-up on scroll (IntersectionObserver)     (client)
-  Services, WhyUs, Work, Process, Testimonials, Areas, Contact, Footer — server components
+  Services, WhyUs, Work, Process, Areas, Contact, Footer — server components
 lib/
   site.ts                    — non-translatable data: contact info, photos, ids for every list
   icons.tsx                  — line-icon set + <Icon />
@@ -79,7 +79,7 @@ tests/                       — message parity + slider behaviour
 ## Editing content
 
 - **Copy** → `messages/en.json` and `messages/es.json`. Keep the keys identical; `npm test` fails if they drift.
-- **Lists** (services, testimonials, cities, …) → the ids live in `lib/site.ts`; each id needs matching copy in both message files (also checked by tests).
+- **Lists** (services, cities, …) → the ids live in `lib/site.ts`; each id needs matching copy in both message files (also checked by tests).
 - **Contact details** → `PHONES` (one line per language) and `CONTACT` in `lib/site.ts`.
   The hero and service-area strip show the visitor's language line; Contact and the footer list both.
 
@@ -87,5 +87,4 @@ tests/                       — message parity + slider behaviour
 
 - Replace the `[LICENSE]` placeholder in `lib/site.ts`.
 - Swap the stock photos in `public/images/` for real MME project photos.
-- Replace the placeholder reviews in `messages/*.json` → `testimonials.items`, and remove the `testimonials.note` placeholder hint.
 - Hook the quote form up to a real destination (email service, CRM, or an API route) and remove `contact.disclaimer`.

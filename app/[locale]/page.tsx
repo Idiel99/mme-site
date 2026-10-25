@@ -5,7 +5,6 @@ import Services from "@/components/Services";
 import WhyUs from "@/components/WhyUs";
 import Work from "@/components/Work";
 import Process from "@/components/Process";
-import Testimonials from "@/components/Testimonials";
 import Areas from "@/components/Areas";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -62,7 +61,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <WhyUs />
       <Work />
       <Process />
-      <Testimonials />
       <Areas />
       <Contact />
       <Footer />

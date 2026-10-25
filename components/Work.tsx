@@ -14,7 +14,8 @@ export default function Work() {
           {WORK_ITEMS.map((it, i) => (
             <Reveal key={it.key} delay={((i % 3) + 1) as 1 | 2 | 3}>
               <BeforeAfterSlider
-                photo={it.photo}
+                before={it.before}
+                after={it.after}
                 label={t(`items.${it.key}.title`)}
                 tag={t(`items.${it.key}.tag`)}
                 beforeLabel={t("beforeLabel")}

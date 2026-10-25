@@ -3,16 +3,18 @@
 import Image from "next/image";
 import { useRef, useState } from "react";
 
-// Drag (mouse, touch, or pen) or use arrow keys to compare a weathered "before" with the "after" photo.
+// Drag (mouse, touch, or pen) or use arrow keys to compare the "before" photo with the "after" photo.
 export default function BeforeAfterSlider({
-  photo,
+  before,
+  after,
   label,
   tag,
   beforeLabel,
   afterLabel,
   sliderLabel,
 }: {
-  photo: string;
+  before: string;
+  after: string;
   label: string;
   tag: string;
   beforeLabel: string;
@@ -63,22 +65,20 @@ export default function BeforeAfterSlider({
         }}
         className="relative aspect-[4/3] cursor-ew-resize touch-pan-y select-none overflow-hidden rounded-[18px] border border-hair shadow-[0_20px_50px_-28px_rgba(11,71,166,.45)] outline-none focus-visible:ring-2 focus-visible:ring-glow"
       >
-        <Image src={photo} alt={afterLabel} fill sizes="(max-width: 700px) 100vw, 400px" className="object-cover" draggable={false} />
+        <Image src={after} alt={`${afterLabel}: ${label}`} fill sizes="(max-width: 700px) 100vw, 400px" className="object-cover" draggable={false} />
         <span className={`${pillCls} right-3 bg-brand/85 text-white`} style={outfit}>
           {afterLabel}
         </span>
 
         <div className="absolute inset-0" style={{ clipPath: clip, WebkitClipPath: clip }}>
           <Image
-            src={photo}
-            alt={beforeLabel}
+            src={before}
+            alt={`${beforeLabel}: ${label}`}
             fill
             sizes="(max-width: 700px) 100vw, 400px"
             className="object-cover"
             draggable={false}
-            style={{ filter: "grayscale(.85) brightness(.6) contrast(.95) sepia(.18)" }}
           />
-          <div className="absolute inset-0 bg-[rgba(20,18,12,.25)]" />
           <span className={`${pillCls} left-3 bg-[rgba(228,234,242,.92)] text-ink`} style={outfit}>
             {beforeLabel}
           </span>

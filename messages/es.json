@@ -134,19 +134,31 @@
   "work": {
     "eyebrow": "Antes y después",
     "title": "Transformaciones reales del Sur de Florida",
-    "sub": "Arrastre el control para ver la diferencia. Reemplace estos ejemplos con las fotos reales de MME para mayor impacto.",
+    "sub": "Arrastre el control para ver la diferencia — proyectos reales de MME en el Sur de Florida.",
     "items": {
-      "roofPaint": {
-        "title": "Techo y repintado exterior",
+      "stuccoPaint": {
+        "title": "Stucco completo y pintura exterior",
+        "tag": "Stucco · Pintura"
+      },
+      "roofValley": {
+        "title": "Reconstrucción de valle en techo de tejas",
+        "tag": "Techos"
+      },
+      "roofClean": {
+        "title": "Restauración de techo de tejas",
+        "tag": "Techos · Limpieza"
+      },
+      "wallWash": {
+        "title": "Soft wash de paredes y persianas",
+        "tag": "Lavado a Presión"
+      },
+      "metalRoof": {
+        "title": "Recubrimiento de techo de metal",
         "tag": "Techos · Pintura"
       },
-      "stuccoWash": {
-        "title": "Stucco y soft wash",
-        "tag": "Stucco · Limpieza"
-      },
-      "drivewayFull": {
-        "title": "Entrada y exterior completo",
-        "tag": "Entrada · Y Más"
+      "stepsWash": {
+        "title": "Lavado a presión de escalones",
+        "tag": "Lavado a Presión"
       }
     },
     "dragHint": "Arrastre",

@@ -72,6 +72,7 @@ lib/
 messages/{en,es}.json        — all user-visible copy
 proxy.ts                     — next-intl locale routing (Next 16 "proxy", formerly middleware)
 public/images/               — project photos extracted from the design export
+public/images/work/          — real before/after pairs ({key}-before.jpg / {key}-after.jpg, 1200×900)
 tests/                       — message parity + slider behaviour
 ```
 
@@ -86,5 +87,5 @@ tests/                       — message parity + slider behaviour
 
 - Replace the `[LICENSE]` placeholder in `lib/site.ts`.
 - Swap the stock photos in `public/images/` for real MME project photos.
-- Replace the placeholder reviews in `messages/*.json` → `testimonials.items`, and remove the `testimonials.note` / `work.sub` placeholder hints.
+- Replace the placeholder reviews in `messages/*.json` → `testimonials.items`, and remove the `testimonials.note` placeholder hint.
 - Hook the quote form up to a real destination (email service, CRM, or an API route) and remove `contact.disclaimer`.

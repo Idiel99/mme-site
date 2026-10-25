@@ -16,7 +16,8 @@ vi.mock("next/image", () => ({
 function renderSlider() {
   render(
     <BeforeAfterSlider
-      photo="/images/coastal.jpg"
+      before="/images/work/a-before.jpg"
+      after="/images/work/a-after.jpg"
       label="Driveway & full exterior"
       tag="Driveway"
       beforeLabel="Before"
@@ -30,6 +31,12 @@ function renderSlider() {
 describe("BeforeAfterSlider", () => {
   it("starts centered", () => {
     expect(renderSlider()).toHaveAttribute("aria-valuenow", "50");
+  });
+
+  it("shows the before and after photos in their own layers", () => {
+    renderSlider();
+    expect(screen.getByAltText("Before: Driveway & full exterior")).toHaveAttribute("src", "/images/work/a-before.jpg");
+    expect(screen.getByAltText("After: Driveway & full exterior")).toHaveAttribute("src", "/images/work/a-after.jpg");
   });
 
   it("moves with arrow keys and jumps with Home/End", () => {

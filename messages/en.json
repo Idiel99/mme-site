@@ -134,19 +134,31 @@
   "work": {
     "eyebrow": "Before & after",
     "title": "Real South Florida transformations",
-    "sub": "Drag the slider to see the difference. Swap these placeholders with MME's own project photos for the strongest impact.",
+    "sub": "Drag the slider to see the difference — real MME projects across South Florida.",
     "items": {
-      "roofPaint": {
-        "title": "Roof & exterior repaint",
+      "stuccoPaint": {
+        "title": "Full stucco & exterior repaint",
+        "tag": "Stucco · Paint"
+      },
+      "roofValley": {
+        "title": "Tile roof valley rebuild",
+        "tag": "Roofing"
+      },
+      "roofClean": {
+        "title": "Tile roof restoration",
+        "tag": "Roofing · Cleaning"
+      },
+      "wallWash": {
+        "title": "Wall & shutter soft wash",
+        "tag": "Pressure Cleaning"
+      },
+      "metalRoof": {
+        "title": "Metal roof coating",
         "tag": "Roofing · Paint"
       },
-      "stuccoWash": {
-        "title": "Stucco refresh & soft wash",
-        "tag": "Stucco · Cleaning"
-      },
-      "drivewayFull": {
-        "title": "Driveway & full exterior",
-        "tag": "Driveway · & More"
+      "stepsWash": {
+        "title": "Entry steps pressure clean",
+        "tag": "Pressure Cleaning"
       }
     },
     "dragHint": "Drag",

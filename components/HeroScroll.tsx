@@ -17,7 +17,8 @@ function useScrollProgress(ref: React.RefObject<HTMLElement | null>) {
       if (!el) return;
       const total = el.offsetHeight - window.innerHeight;
       const scrolled = -el.getBoundingClientRect().top;
-      setP(Math.max(0, Math.min(1, scrolled / total)));
+      // total can be 0 mid-layout; 0/0 is NaN, which the clamp passes through and breaks the stage lookup.
+      setP(total > 0 ? Math.max(0, Math.min(1, scrolled / total)) : 0);
     };
     const onScroll = () => {
       if (!raf) raf = requestAnimationFrame(calc);

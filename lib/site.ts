@@ -66,11 +66,12 @@ export const WHY_STATS = [
   { key: "rating", num: "5.0★" },
 ];
 
-export const WORK_ITEMS = [
-  { key: "roofPaint", photo: PHOTOS.stuccoDrive },
-  { key: "stuccoWash", photo: PHOTOS.poolPalm },
-  { key: "drivewayFull", photo: PHOTOS.coastal },
-];
+// Real project pairs, cropped to the slider's 4:3 frame in public/images/work/{key}-{before,after}.jpg.
+export const WORK_ITEMS = ["stuccoPaint", "roofValley", "roofClean", "wallWash", "metalRoof", "stepsWash"].map((key) => ({
+  key,
+  before: `${BASE_PATH}/images/work/${key}-before.jpg`,
+  after: `${BASE_PATH}/images/work/${key}-after.jpg`,
+}));
 
 export const PROCESS_STEPS = ["consult", "quote", "work", "done"] as const;
 

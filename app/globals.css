@@ -39,8 +39,7 @@
   @keyframes copy-fade {
     from { transform: translateY(18px); }
     to { transform: none; }
-  }
-}
+  }}
 
 html {
   scroll-behavior: smooth;
